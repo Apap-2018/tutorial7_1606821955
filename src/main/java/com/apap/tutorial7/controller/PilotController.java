@@ -1,7 +1,5 @@
 package com.apap.tutorial7.controller;
 
-import java.util.Optional;
-
 import com.apap.tutorial7.model.PilotModel;
 import com.apap.tutorial7.rest.PilotDetail;
 import com.apap.tutorial7.rest.Setting;
@@ -9,8 +7,6 @@ import com.apap.tutorial7.service.PilotService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

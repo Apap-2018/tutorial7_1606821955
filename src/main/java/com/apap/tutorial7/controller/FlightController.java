@@ -4,9 +4,7 @@ import java.sql.Date;
 import java.util.List;
 
 import com.apap.tutorial7.model.FlightModel;
-import com.apap.tutorial7.model.PilotModel;
 import com.apap.tutorial7.service.FlightService;
-import com.apap.tutorial7.service.PilotService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -27,9 +25,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class FlightController {
 	@Autowired
 	private FlightService flightService;
-	
-	@Autowired
-	private PilotService pilotService;
 	
 	@PostMapping(value = "/add")
 	public FlightModel addFlightSubmit(@RequestBody FlightModel flight) {
