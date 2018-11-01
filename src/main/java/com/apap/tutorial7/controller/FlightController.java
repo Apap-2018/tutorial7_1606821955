@@ -32,11 +32,7 @@ public class FlightController {
 	private PilotService pilotService;
 	
 	@PostMapping(value = "/add")
-	public FlightModel addFlightSubmit(@RequestBody FlightModel flight,
-			@RequestParam("pilotLicenseNumber") String pilotLicenseNumber) {
-		PilotModel pilot = pilotService.getPilotDetailByLicenseNumber(pilotLicenseNumber).get();
-		flight.setPilot(pilot);
-		
+	public FlightModel addFlightSubmit(@RequestBody FlightModel flight) {
 		return flightService.addFlight(flight);
 	}
 	
